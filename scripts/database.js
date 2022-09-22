@@ -71,6 +71,6 @@ const database = {
 }
 
 export const getShows = () => {
-  return null
+  return database.tvShows.map(show => ({...show}))
 }
 
